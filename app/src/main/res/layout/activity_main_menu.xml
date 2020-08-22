@@ -1,0 +1,102 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".MainMenu"
+    android:background="@drawable/background"
+    android:id="@+id/menu"
+    android:focusable="false"
+    android:gravity="top|left|bottom|start|end|right"
+    android:transitionGroup="true">
+
+<!--VideoView
+    android:id="@+id/VideoView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"/-->
+
+
+    <!-- Bianca Theodoro -->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:id="@+id/bt_building"
+    android:src="@drawable/buildings"
+    android:background="@null"
+    android:onClick="goLocation2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/bt_shuttle" />
+ <!--  android:onClick="backtomainmenu"
+  android:clickable="true" -->
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt_shuttle"
+    android:src="@drawable/shuttle"
+    android:background="@null"
+    android:onClick="goShuttleStops"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt_food"
+    android:src="@drawable/food"
+    android:background="@null"
+    android:onClick="goEatPlace"
+    android:layout_below="@+id/bt_building"
+    android:layout_alignRight="@+id/bt_building"
+    android:layout_alignEnd="@+id/bt_building" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt_parking"
+    android:src="@drawable/parking"
+    android:background="@null"
+    android:onClick="goParking"
+    android:layout_alignTop="@+id/bt_food"
+    android:layout_alignLeft="@+id/bt_shuttle"
+    android:layout_alignStart="@+id/bt_shuttle" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt_atm"
+    android:src="@drawable/atm"
+    android:background="@null"
+    android:onClick="goATM"
+    android:layout_below="@+id/bt_food"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignRight="@+id/bt_food"
+    android:layout_alignEnd="@+id/bt_food" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/bt_info"
+    android:src="@drawable/info"
+    android:background="@null"
+    android:onClick="goInfo"
+    android:layout_alignWithParentIfMissing="false"
+    android:layout_alignTop="@+id/bt_atm"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

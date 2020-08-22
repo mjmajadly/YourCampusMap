@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:onClick="gotomainmenu"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/statelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statelabel"
+        android:onClick="gotomainmenu"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/statelabel"
+        android:onClick="gotoactivity"/>
+
+    <TextView
+        android:id="@+id/unilabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statelabel"
+        android:text="@string/unilabel"
+        android:onClick="gotomainmenu"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state"
+        android:layout_toRightOf="@+id/unilabel"
+        android:onClick="gotomainmenu"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/campusnamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unilabel"
+        android:text="@string/campusnamelabel"
+        android:onClick="gotomainmenu"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/campusname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uni"
+        android:layout_toRightOf="@+id/campusnamelabel"
+        android:onClick="gotomainmenu"
+        android:clickable="true"/>
+
+</RelativeLayout>

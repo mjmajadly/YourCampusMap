@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/statelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statelabel"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/statelabel" />
+
+    <TextView
+        android:id="@+id/unilabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statelabel"
+        android:text="@string/unilabel"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/state"
+        android:layout_toRightOf="@+id/unilabel" />
+
+    <TextView
+        android:id="@+id/campusnamelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/unilabel"
+        android:text="@string/campusnamelabel" />
+
+    <TextView
+        android:id="@+id/campusname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uni"
+        android:layout_toRightOf="@+id/campusnamelabel" />
+
+</RelativeLayout>

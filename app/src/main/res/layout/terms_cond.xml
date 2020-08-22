@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+
+    android:baselineAligned="false">
+
+    <ImageButton
+        android:id="@+id/bt_accept"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/bt_accept"
+        android:onClick="gotoactivity"
+        android:background="@null"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="300dp"
+        android:id="@+id/bg_terms_words"
+        android:src="@drawable/bg_terms_words"
+        android:visibility="visible"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="-29dp"
+        android:layout_alignLeft="@+id/terms_cond"
+        android:layout_alignStart="@+id/terms_cond"
+        android:layout_alignRight="@+id/terms_cond"
+        android:layout_alignEnd="@+id/terms_cond"
+        android:layout_below="@+id/bt_accept" />
+
+    <TextView
+        android:layout_width="352dp"
+        android:layout_height="202dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/agreement"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:id="@+id/terms_cond"
+        android:textSize="10pt"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:enabled="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bt_accept"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="18dp"
+
+        android:textIsSelectable="false"
+        android:longClickable="false" />
+
+    <TextView
+        android:layout_width="352dp"
+        android:layout_height="202dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/agreement1"
+        android:autoLink="web"
+        android:textSize="12pt"
+        android:textColor="#ffffff"
+        android:clickable="true"
+        android:enabled="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/bt_accept"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="50dp"
+        android:linksClickable="true"
+        android:longClickable="true" />
+
+</RelativeLayout>

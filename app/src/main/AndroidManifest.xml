@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yourcampusmap.themap" >
+
+    <!-- ActionBarSherlock Permissions -->
+    <permission android:name="com.ecs.google.maps.v2.actionbarsherlock.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE"/>
+    <!-- Routing Permissions -->
+    <uses-permission android:name="in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE" />
+
+    <uses-permission android:name="in.wptrafficanalyzer.locationingooglemapv2.permission.MAPS_RECEIVE"/>
+    <!-- added for maps -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- External storage for caching. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- My Location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <!-- added for google maps
+    <permission
+        android:name="com.yourcampusmap.themap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.yourcampusmap.themap.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.adnroid.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:glEsVersion="0x00020000"
+        android:required="true"/>  This means that is looking for open GLES V. 2.0 -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_ycm_new"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+
+        <activity
+            android:name=".TermsAndCond"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock"/>
+        <activity android:name=".MainMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock"/>
+        <activity android:name=".SingleItemView"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock"/>
+
+        <!-- added for google maps -->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        <activity
+            android:name=".Buildings"
+            android:label="@string/title_activity_buildings"
+            android:parentActivityName=".MainMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".PlacesToEat"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_places_to_eat"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".ATM"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_atm"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".CampusStops"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_campus_stops"
+            android:parentActivityName=".MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".Information"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_information"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".Parking"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_parking"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".LocationActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_location"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+        <activity
+            android:name=".LocationActivity2"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_2"
+            android:parentActivityName=".MainMenu"
+            android:theme="@style/Theme.Sherlock">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenu" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB6tqrHlqeDudK9S5mFPf0kEDKESbl9Q-Q"/>
+        <!--android:value="AIzaSyBqe2bSh3bX1i1h-9wmfCIZN-FHlT6beZQ"/> -->
+
+    </application>
+
+</manifest>
+
+    <!--
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yourcampusmap.themap">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_map"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SingleItemView"></activity>
+        <activity android:name=".TermsAndCond"></activity>
+
+    </application>
+
+</manifest>
+-->

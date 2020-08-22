@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Your Campus Map</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drop_menu">Drop Menu</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Find Campus</string>
+    <string name="search_hint">Find Your Campus</string>
+    <string name="statelabel">"State: "</string>
+    <string name="unilabel">"Campus: "</string>
+    <string name="campusnamelabel">""</string>
+    <string name="Driving">"Car"</string>
+    <string name="Walking">"Walk"</string>
+    <string name="agree">"I Agree"</string>
+    <string name="agreement">By clicking "accept" you agree \n with our Terms and Conditions:\n</string>
+    <!-- <string name="agreement1"><a href="https://yourcampusmap.com">Terms and Conditions</a></string> -->
+    <string name="agreement1">yourcampusmap.com</string>
+    <!-- <string name="agreement">"By clicking "accept" you \nagree with our \n<a href="https://yourcampusmap.com>">Terms and Conditions </a>" </string> -->
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_buildings">Buildings</string>
+    <string name="title_activity_2">Buildings</string>
+    <string name="title_activity_places_to_eat">Food</string>
+    <string name="title_activity_atm">ATM</string>
+    <string name="action_Exit_App">Log Out</string>
+    <string name="shuttle_stops">Displays the various shuttle stops</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_campus_stops">Campus Stops</string>
+    <string name="title_activity_information">Information</string>
+    <string name="title_activity_parking">Parking</string>
+    <string name="title_activity_location">Navigation</string>
+    <string name="info_back">Back to Main</string>
+    <string name="info1">Campus Escort:(775) 742-6808 </string>
+    <string name="info2">Counseling Services: (775) 784-4648</string>
+    <string name="info3">Crisis Call Center: (775) 784-8090</string>
+    <string name="info4">Motorist Assistance Program: (775) 784-4654</string>
+    <string name="info5">National Suicide Prevention Hotline: (800) 273-8255</string>
+    <string name="info6">Student Health Center: (775) 784-6598</string>
+    <string name="info7">University Operator: (775) 784-1110</string>
+    <string name="info8">University Police: (775) 334-2677</string>
+
+</resources>
